@@ -1,0 +1,215 @@
+.flipButton {
+  text-align:center;
+  cursor:pointer;
+	color: #fff;
+	font-weight: 700;
+}
+
+.login_body {
+    margin-bottom: 80px;
+}
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+
+}
+
+/*	.flip-container:hover .flipper,  */
+
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 350px;
+}
+
+.flipper {
+	-webkit-transition: 0.5s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.5s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.5s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.5s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	/*background: url(http://davidwalsh.name/demo/dwflip.jpg) 0 0 no-repeat;*/
+	z-index: 2;
+}
+
+.login_body .back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	padding: 28px;
+  
+}
+
+.front .name {
+	font-size: 2em;
+	display: inline-block;
+	background: rgba(33, 33, 33, 0.9);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: 10px;
+	left: 14%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+
+}
+.name {
+ 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+}  
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	/*position: relative;*/
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  /*float: left;*/
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+} 
+
+/* login page css */
+
+.blur-background {
+     background-image: url("../images/background-img(blur).jpg");
+     background-repeat:no-repeat;
+     background-size:cover;
+     padding-bottom: 50px;
+     border-radius: 0;
+     border: none;
+     box-shadow: 0 0 4px #565151;
+}
+ .blur-background .modal-header{
+     border:none;
+}
+ .custom-form{
+     background-color: white;
+     padding: 80px 30px 60px 30px;
+     margin-top:80px;
+     position:relative;
+}
+ .custom-color{
+     color: #f2b33d;
+}
+ .custom-color-footer{
+     color: #e7e6e6;
+     font-weight: bold;
+     font-size: 12px;
+     letter-spacing: 1px;
+}
+ .custom-color-footer a:hover{
+     color:#fc980c;
+}
+ .custom-input-group-addon {
+     padding: 6px 12px;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1;
+     color: #b9b2b2;
+     text-align: center;
+     background-color: #fff;
+     border-right: none;
+}
+ .custom-input{
+     border-left: none;
+     box-shadow: none;
+     height: 40px;
+}
+ .custom-sign-in-button{
+     width: 114px;
+     background: linear-gradient(#fecc56, #fc9507);
+     height: 40px;
+     font-weight: 600;
+}
+ .custom-input:focus {
+     box-shadow: none;
+     border-color: #ffe8be;
+     background-color: #ffe8be;
+}
+ .custom-form .checkbox{
+     margin-bottom: 20px;
+     color: #b29999;
+}
+ .open-login{
+     position: absolute;
+     right: 50px;
+     bottom: 50%;
+     width: 60px;
+     background: linear-gradient(#ffb400, #fc9507);
+     height: 35px;
+     font-weight: 500;
+     border: none;
+     box-shadow: 1px 1px 1px black;
+}
+ .profile-image{
+     position: absolute;
+     max-width: 112px;
+     top: -20%;
+     left: 50%;
+     margin: 0 0 0 -54px;
+}
+ .remove-top-border{
+     border-top:none;
+}
+
+.login_body .back img {
+    max-width: 154px;
+}
+.login_body .back a {
+    display: block;
+	color: #fff;
+    text-shadow: 0px 2px 5px #000;
+    font-size: 16px;
+}
